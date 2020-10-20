@@ -350,6 +350,7 @@
           button.innerHTML = facetogif.str.STOP_STREAMING;
           button.classList.add('streaming');
           // facetogif.video.src = window.URL.createObjectURL(stream);
+         
           
 this.srcObject = mediaStream;
           
