@@ -349,7 +349,14 @@
           track('streaming', 'start');
           button.innerHTML = facetogif.str.STOP_STREAMING;
           button.classList.add('streaming');
-          facetogif.video.src = window.URL.createObjectURL(stream);
+          // facetogif.video.src = window.URL.createObjectURL(stream);
+          
+          try {
+  this.srcObject = stream;
+} catch (error) {
+  this.src = window.URL.createObjectURL(stream);
+}
+          
           facetogif.initSize();
           facetogif.stream = stream;
           // mobile hidden video hack
