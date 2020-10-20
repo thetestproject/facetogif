@@ -351,11 +351,7 @@
           button.classList.add('streaming');
           // facetogif.video.src = window.URL.createObjectURL(stream);
           
-          try {
-  this.srcObject = stream;
-} catch (error) {
-  this.src = window.URL.createObjectURL(stream);
-}
+this.srcObject = stream;
           
           facetogif.initSize();
           facetogif.stream = stream;
